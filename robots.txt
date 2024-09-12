@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://landify.design/sitemap/sitemap-index.xml
+Host: https://landify.design
