@@ -27,23 +27,23 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-a77f890faa3361733c97.js"
+    "url": "webpack-runtime-f736e2d529dd06f04257.js"
   },
   {
-    "url": "framework-be8d91c01c2651d4c2bd.js"
+    "url": "framework-f2c53d2cde43afd336f1.js"
   },
   {
-    "url": "styles.937dd43738cce8d4fe4b.css"
+    "url": "styles.ab87d3465ff804275aba.css"
   },
   {
-    "url": "app-7e61cf1773159089ec62.js"
+    "url": "app-5faecae8c193644a76e4.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "1aac7d4dab76a6ae7c05eb7b416dff91"
+    "revision": "fee933a80585efcecde64de0362b05fb"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-fa938be5b5599a7475ed.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-2685fe4356115968c6ba.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -51,10 +51,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "64929493a0af317ce01ef6596b622fbc"
+    "revision": "aa809a014b01a6d44a7214ad2b9dfb83"
   },
   {
-    "url": "polyfill-3f135d42a9a27cb37adc.js"
+    "url": "polyfill-cc36adffa7e62a288c85.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -168,7 +168,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/grawerowanie-landing-page/app-7e61cf1773159089ec62.js`))) {
+  if (!resources || !(await caches.match(`/grawerowanie-landing-page/app-5faecae8c193644a76e4.js`))) {
     return await fetch(event.request)
   }
 
