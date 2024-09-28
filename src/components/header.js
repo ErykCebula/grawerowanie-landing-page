@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Logo from "../images/logos/logo-dark.svg";
 import Button from "./button";
@@ -19,12 +18,13 @@ const Header = () => {
       <header>
         <div className="container mx-auto">
           <div className="flex py-5 justify-between items-center">
-            <Link to="/">
-              <img className="h-8 w-auto" src={Logo} alt="Logo" />
-            </Link>
+            <div className="flex items-center space-x-2">
+              <img className="h-8 w-auto" src={Logo} alt="Logo"/>
+              <span className="text-lg font-semibold">Grawerowanie24</span>
+            </div>
             <nav className="flex flex-row gap-6">
               <div className="hidden md:flex gap-4 items-center">
-                {navigation.map(({ name, sectionId }) => (
+                {navigation.map(({name, sectionId}) => (
                     <a
                         key={name}
                         onClick={() => scrollToSection(sectionId)}
