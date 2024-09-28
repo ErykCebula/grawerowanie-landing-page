@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ label, link, size, icon }) => (
+const Button = ({ label, link, size, icon, onClick, className }) => (
   <a
     className={`button flex gap-1 items-center justify-center bg-primary-600 text-white font-semibold  ${
       size === "lg" ? "px-6 py-4 text-body-sm" : "px-5 py-3 text-body-xs"
-    }`}
-    href={link}>
+    } ${className}`}
+    href={link}
+  onClick={onClick}>
     {label}
     {icon === true ? (
       <svg
@@ -38,7 +39,7 @@ const Button = ({ label, link, size, icon }) => (
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
   size: PropTypes.string,
   icon: PropTypes.bool,
 };

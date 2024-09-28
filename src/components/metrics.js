@@ -11,23 +11,23 @@ const Metrics = () => {
                 100%
               </p>
               <p className="text-body-sm font-normal tracking-wider pt-2">
-                SATISFITATION <br></br>CLIENTS
+                Zadowolonych Klientów <br></br>Zaufało naszym usługom
               </p>
             </div>
             <div className="md:col-span-4 flex xl:flex-row md:flex-col flex-row xl:gap-4 md:gap-0 gap-4 xl:items-center md:items-start items-center">
               <p className="font-display md:text-display-xl text-display-lg font-normal">
-                250
+                1500+
               </p>
               <p className="text-body-sm font-normal tracking-wider pt-2">
-                EMPLOYEES ON <br></br>WORLDWIDE
+                Personalizowanych Projektów <br></br>Realizowanych na zamówienie
               </p>
             </div>
             <div className="md:col-span-4 flex xl:flex-row md:flex-col flex-row xl:gap-4 md:gap-0 gap-4 xl:items-center md:items-start items-center">
               <p className="font-display md:text-display-xl text-display-lg font-normal">
-                3469
+                15 lat
               </p>
               <p className="text-body-sm font-normal tracking-wider pt-2">
-                PROJECTS COMPLETED <br></br>ON 60 COUNTRIES
+                Doświadczenia w branży <br></br>Precyzyjne grawerowanie
               </p>
             </div>
           </div>

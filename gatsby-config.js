@@ -1,9 +1,10 @@
 module.exports = {
+ pathPrefix: "/grawerowanie-landing-page", // Add this line with your repository name
   siteMetadata: {
-    title: `Inteo`,
-    description: `Award winning architecture and interior design studio template. Made by Landify.`,
-    siteUrl: `https://landify.design`, // Replace with your domain name
-    author: `@landifydesign`, // Replace with your twitter handle
+    title: `grawerowanie24`,
+    description: `Najlepsze mejsce do graweru w Lubuskim.`,
+    siteUrl: `https://erykcebula.github.io/grawerowanie-landing-page`, // Replace with your GitHub Pages URL
+    author: `@erykcebula`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -35,15 +36,13 @@ module.exports = {
         background_color: `#7C3AED`,
         theme_color: `#7C3AED`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // Replace with your favicon (This path is relative to the root of the site)
+        icon: `src/images/favicon.png`,
       },
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          `GA-TRACKING_ID`, // Replace with your Google Analytics tracking ID
-        ],
+        trackingIds: [`GA-TRACKING_ID`],
         pluginConfig: {
           head: true,
         },
@@ -52,8 +51,5 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
-    // Use this plugin if you are deploying you site to Gatsby Cloud
-    // To learn more, visit: https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/deploying-to-gatsby-cloud/
-    // `gatsby-plugin-gatsby-cloud`,
   ],
 };

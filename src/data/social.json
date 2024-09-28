@@ -7,16 +7,6 @@
   {
     "name": "Facebook",
     "icon": "../images/social-icons/facebook.svg",
-    "href": "#"
-  },
-  {
-    "name": "YouTube",
-    "icon": "../images/social-icons/youtube.svg",
-    "href": "#"
-  },
-  {
-    "name": "Twitter",
-    "icon": "../images/social-icons/twitter.svg",
-    "href": "#"
+    "href": "https://www.facebook.com/grawerowanie24/"
   }
 ]
