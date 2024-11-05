@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://erykcebula.github.io/sitemap/sitemap-index.xml
+Sitemap: https://erykcebula.github.io/grawerowanie-landing-page/sitemap/sitemap-index.xml
 Host: https://erykcebula.github.io
