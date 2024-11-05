@@ -4,7 +4,6 @@ import { getImage } from "gatsby-plugin-image";
 
 import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
-import Button from "./button";
 
 const Works = () => {
   const data = useStaticQuery(graphql`
@@ -17,7 +16,7 @@ const Works = () => {
           image {
             childImageSharp {
               gatsbyImageData(
-                width: 592
+                width: 650
                 placeholder: BLURRED
                 formats: [AUTO, WEBP, AVIF]
               )
@@ -54,12 +53,12 @@ const Works = () => {
               ))}
             </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
-              {data.allWorksJson.nodes.slice(1, 3).map((node) => (
+              {data.allWorksJson.nodes.slice(1, 6).map((node) => (
                   <WorkItem
                       key={node.id}
-                  image={getImage(node.image)}
-                  title={node.title}
-                  description={node.description}
+                      image={getImage(node.image)}
+                      title={node.title}
+                      description={node.description}
                 />
               ))}
             </div>

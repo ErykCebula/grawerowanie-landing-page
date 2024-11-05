@@ -7,7 +7,7 @@ import Eyebrow from "./eyebrow";
 const About = () => {
   const data = useStaticQuery(graphql`
     {
-      aboutimage: file(relativePath: { eq: "about-creative.png" }) {
+      aboutimage: file(relativePath: { eq: "about-creative-1.png" }) {
         childImageSharp {
           gatsbyImageData(
             width: 592
