@@ -16,7 +16,6 @@ const Works = () => {
           image {
             childImageSharp {
               gatsbyImageData(
-                width: 650
                 placeholder: BLURRED
                 formats: [AUTO, WEBP, AVIF]
               )
@@ -43,17 +42,9 @@ const Works = () => {
                   najwyższe oczekiwania.
                 </p>
               </div>
-              {data.allWorksJson.nodes.slice(0, 1).map((node) => (
-                  <WorkItem
-                      key={node.id}
-                      image={getImage(node.image)}
-                      title={node.title}
-                      description={node.description}
-                  />
-              ))}
             </div>
-            <div className="xl:col-span-12 lg:col-span-8 flex flex-col xl:gap-20 md:gap-20 gap-10 xl:px-16">
-              {data.allWorksJson.nodes.slice(1, 6).map((node) => (
+            <div className="xl:col-span-12 lg:col-span-8 flex flex-col xl:gap-20 md:gap-20 gap-10 xl:px-18">
+              {data.allWorksJson.nodes.slice(0, 6).map((node) => (
                   <WorkItem
                       key={node.id}
                       image={getImage(node.image)}
