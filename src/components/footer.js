@@ -64,11 +64,6 @@ const Footer = () => {
                 600 171 928
               </a>
               <span className="mx-2">  </span>
-              <a
-                  className="text-display-xs font-display font-normal text-primary-600"
-                  href="tel:+48796303969">
-                796 303 969
-              </a>
             </div>
           </div>
         </div>
