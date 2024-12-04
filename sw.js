@@ -27,38 +27,30 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-4c6cbec6cea52e915e78.js"
+    "url": "webpack-runtime-e62aa2afff9f7da9f760.js"
   },
   {
     "url": "framework-f2c53d2cde43afd336f1.js"
   },
   {
-    "url": "styles.28c323fa4822c35f796a.css"
+    "url": "styles.e82e435d3396c902df56.css"
   },
   {
-    "url": "app-2a29a84b2be9bbda58c5.js"
+    "url": "app-29f122bec3253c9c0224.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "42d46dcf8003c38ed828b5d149f75d15"
+    "revision": "8052cc722e32de5eb752f481c9db1e58"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-2685fe4356115968c6ba.js"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "f2c002077289a7e1ac538802bc7f5314"
-  },
-  {
-    "url": "page-data/app-data.json",
-    "revision": "b56225b10148eba3a892b535c9c62268"
   },
   {
     "url": "polyfill-cc36adffa7e62a288c85.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "41e116dd15060d1aee5ca9cda943f39a"
+    "revision": "d94f1780bf0d6c65c76e6401fd3ab0e9"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -163,12 +155,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/grawerowanie-landing-page`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/grawerowanie-landing-page/app-2a29a84b2be9bbda58c5.js`))) {
+  if (!resources || !(await caches.match(`/app-29f122bec3253c9c0224.js`))) {
     return await fetch(event.request)
   }
 
@@ -181,7 +173,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/grawerowanie-landing-page/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
